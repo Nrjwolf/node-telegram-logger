@@ -19,4 +19,7 @@ npm install @nrjwolf/telegram-logger
 ## Usage 
 
 ```typescript
+import { TelegramLogger } from '@nrjwolf/telegram-logger'
+const tgLogger = new TelegramLogger('bot:token', 'chat_id', 'log prefix text')
+tgLogger.sendMessage('message text')
 ```
