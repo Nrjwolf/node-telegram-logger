@@ -1,6 +1,6 @@
 {
   "name": "@nrjwolf/telegram-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Log to telegram",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
