@@ -1,0 +1,30 @@
+{
+  "name": "@nrjwolf/telegram-logger",
+  "version": "1.0.0",
+  "description": "Log to telegram",
+  "main": "dist/app.js",
+  "types": "dist/app.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nrjwolf/node-telegram-logger.git"
+  },
+  "author": "nrjwolf <nrjwolf@gmail.com>",
+  "devDependencies": {
+    "typescript": "^4.7.3",
+    "ts-node-dev": "^2.0.0"
+  },
+  "scripts": {
+    "r": "node lib/app.js",
+    "start": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "log",
+    "telegram",
+    "logger"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
