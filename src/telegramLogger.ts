@@ -34,7 +34,7 @@ export default class TelegramLogger {
      */
     async sendMessage(text: string, parse_mode: 'markdown' | 'HTML' = 'HTML') {
         try {
-            const formatedText = `${this.messagePrefix} ${text}`
+            const formatedText = `${this.messagePrefix}${text}`
             return await telegram.sendMessage(formatedText, this.logChat, parse_mode)
         }
         catch (err) {

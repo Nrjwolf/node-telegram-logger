@@ -64,7 +64,7 @@ class TelegramLogger {
     sendMessage(text, parse_mode = 'HTML') {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const formatedText = `${this.messagePrefix} ${text}`;
+                const formatedText = `${this.messagePrefix}${text}`;
                 return yield telegram.sendMessage(formatedText, this.logChat, parse_mode);
             }
             catch (err) {
